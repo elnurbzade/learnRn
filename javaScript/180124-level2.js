@@ -50,7 +50,6 @@ console.log(employeeDetails);
 
 employeeDetails.department = "Software Development";
 console.log(employeeDetails);
-
 employeeDetails.structure = "Information and Security";
 employeeDetails.isAmerica = false;
 employeeDetails.haveBranch = null;
@@ -74,7 +73,6 @@ const {
   id: seriya,
 } = employeeDetails;
 
-// Logging the extracted values
 console.log("Employee Name:", employeeName);
 console.log("Position:", position);
 console.log("Contact:", contact);

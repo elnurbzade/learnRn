@@ -450,5 +450,3 @@ const sum = numbers3.reduce((total, number, index) => {
 }, numbers3[1]);
 
 console.log("Dizi Elemanlarının Toplamı:", sum);
-
-

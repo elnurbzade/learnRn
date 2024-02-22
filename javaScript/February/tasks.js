@@ -52,8 +52,7 @@ console.log(strNum2);
 const str = '12'/'4'
 console.log(str);
 
-const str2 = '12'+'4';
-console.log(typeof str2);
+
 
 const str3= '2'*'3'
 console.log(str3);
@@ -92,3 +91,13 @@ console.log(a4.toFixed(1));
 
 const a5 = 9999999999999999;
 console.log(a5);
+
+const str2 = '12'+'4';
+console.log(str2);
+
+
+const testStrNum = Number.MAX_SAFE_INTEGER
+console.log(testStrNum);
+
+const testStrNum2 = Number.MIN_SAFE_INTEGER
+console.log(testStrNum2);

@@ -16,3 +16,14 @@ person = ["John", 30, true];
 console.log(person[0]);
 console.log(person[1]);
 console.log(person[2]);
+var person2 = ['Danny', 1, true]; // This is identical to above example
+person2[0] = 100;
+console.log(person2);
+var saysStuff = {
+    sayHi: function (name) {
+        return "Hi ".concat(name);
+    },
+    sayBye: function (name) { return "Bye ".concat(name); },
+};
+console.log(saysStuff.sayHi('Heisenberg')); // Hi Heisenberg
+console.log(saysStuff.sayBye('Heisenberg'));

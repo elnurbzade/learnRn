@@ -107,7 +107,35 @@ aa = 123;
 console.log(bb);
 
 let test2 = { myName: "Jenny", age: 12 };
-let test3 = test2
+let test3 = test2;
 
 test2.age = 32;
 console.log(test3.age);
+
+function difference(a, b) {
+  return Math.abs(a - b);
+}
+
+console.log(difference(5, 3));
+console.log(difference(3, 90));
+
+console.log(Math.abs(-131));
+
+console.log(Math.abs(" "));
+console.log(Math.abs(undefined));
+console.log(Math.abs([2, 1]));
+console.log(Math.abs("21"));
+console.log(Math.abs("-32"));
+console.log(Math.abs(-Infinity));
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+console.log(getRandomInt(3));
+
+function getRandomIntInclusive(min, max) {
+  const minCeiled = math.ceil(min);
+  const maxFloored = math.floor(max);
+  return;
+}

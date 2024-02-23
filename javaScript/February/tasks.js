@@ -178,8 +178,6 @@ person.age = 23;
 person.isBool = true;
 person.myFunc();
 
-// Bir prototip nesne oluşturalım
-
 let animal = {
   soundVol() {
     console.log(this.sound);
@@ -191,14 +189,59 @@ dog.sound = "Hov-Hov";
 
 dog.soundVol();
 
-let sentence={
-  sentFunc(){
-    console.log(`I am learning ${this.program}. I have great ${this.skill}. This is very ${this.how}!`);
+let sentence = {
+  sentFunc() {
+    console.log(
+      `I am learning ${this.program}. I have great ${this.skill}. This is very ${this.how}!`
+    );
   },
 };
 
-let me=Object.create(sentence)
+let me = Object.create(sentence);
 me.program = "JavaScript";
 me.skill = "patience";
 me.how = "interesting";
-me.sentFunc()
+me.sentFunc();
+//-------------------------------------------------------//
+
+const object6 = {};
+
+Object.defineProperties(object6, {
+  property1: {
+    value: 42,
+    writable: true,
+  },
+  property2: {
+    value: "Jane",
+    writable: false,
+    enumerable: true
+  },
+});
+console.log(object6.property1);
+console.log(object6.property2);
+
+const test6 = {myNom: "55", love:56}
+console.log(Object.entries(test6));
+
+console.log(Object.entries("love"));
+
+console.log(Object.getOwnPropertyNames("foo"));
+
+
+console.log(Object.getOwnPropertyNames("foo"));
+
+const aaa = 5.22;
+console.log(parseInt(aaa));
+
+
+const numArr = [3.1,2,4,5,[7,343],232,[456,323]]
+console.log(Math.max(...numArr));
+
+
+function getRandomInt(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+}
+
+getRandomInt(1,12)

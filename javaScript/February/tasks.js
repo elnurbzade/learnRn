@@ -139,3 +139,66 @@ function getRandomIntInclusive(min, max) {
   const maxFloored = math.floor(max);
   return;
 }
+
+console.log(Math.pow(-0.5, 0.4));
+
+const test1 = { a: 1, b: 2, c: 3 };
+const test4 = { c: 4, d: 5, e: 6 };
+const test5 = { f: 6, g: 7, h: 8 };
+
+const returnTests = Object.assign(test1, test4, test5);
+const returnTests2 = Object.assign(test5, test4, test1);
+console.log(returnTests);
+console.log(test1);
+console.log(test4);
+console.log(returnTests2);
+
+// const target = { a: 1, b: 2 };
+// const source = { b: 4, c: 5 };
+
+// const returnedTarget = Object.assign(target, source);
+
+// console.log(target);
+// // Expected output: Object { a: 1, b: 4, c: 5 }
+
+// console.log(returnedTarget === target);
+// // Expected output: true
+
+let showMe = {
+  myFunc: function () {
+    console.log(
+      `My name is ${this.myName}. I am ${this.age}. It is ${this.isBool}.`
+    );
+  },
+};
+
+let person = Object.create(showMe);
+person.myName = "Elvis";
+person.age = 23;
+person.isBool = true;
+person.myFunc();
+
+// Bir prototip nesne oluşturalım
+
+let animal = {
+  soundVol() {
+    console.log(this.sound);
+  },
+};
+
+let dog = Object.create(animal);
+dog.sound = "Hov-Hov";
+
+dog.soundVol();
+
+let sentence={
+  sentFunc(){
+    console.log(`I am learning ${this.program}. I have great ${this.skill}. This is very ${this.how}!`);
+  },
+};
+
+let me=Object.create(sentence)
+me.program = "JavaScript";
+me.skill = "patience";
+me.how = "interesting";
+me.sentFunc()

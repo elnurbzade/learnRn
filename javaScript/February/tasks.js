@@ -142,16 +142,16 @@ function getRandomIntInclusive(min, max) {
 
 console.log(Math.pow(-0.5, 0.4));
 
-const test1 = { a: 1, b: 2, c: 3 };
-const test4 = { c: 4, d: 5, e: 6 };
-const test5 = { f: 6, g: 7, h: 8 };
+// const test1 = { a: 1, b: 2, c: 3 };
+// const test4 = { c: 4, d: 5, e: 6 };
+// const test5 = { f: 6, g: 7, h: 8 };
 
-const returnTests = Object.assign(test1, test4, test5);
-const returnTests2 = Object.assign(test5, test4, test1);
-console.log(returnTests);
-console.log(test1);
-console.log(test4);
-console.log(returnTests2);
+// const returnTests = Object.assign(test1, test4, test5);
+// const returnTests2 = Object.assign(test5, test4, test1);
+// console.log(returnTests);
+// console.log(test1);
+// console.log(test4);
+// console.log(returnTests2);
 
 // const target = { a: 1, b: 2 };
 // const source = { b: 4, c: 5 };
@@ -244,4 +244,22 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
 }
 
-getRandomInt(1,12)
+
+
+// console.log(-1**2);
+
+// console.log(Math.pow(-1,2));
+
+
+const test1 = { a: 1, b: 2, c: 3 };
+const test4 = { c: 4, d: 5, e: 6 };
+const test5 = { c: 7, g: 8, h: 9 };
+
+const returnTests = Object.assign(test1, test4, test5);
+const returnTests2 = Object.assign(test5, test4, test1);
+console.log(returnTests);
+
+console.log(test4);
+console.log(returnTests2);
+
+console.log(test1);

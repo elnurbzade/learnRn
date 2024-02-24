@@ -1,5 +1,5 @@
-body{
-  background-color: #036E3C;
+body {
+  background-color: #036e3c;
 }
 
 .all {
@@ -22,8 +22,8 @@ img {
 .cont {
   height: 200px;
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 
   display: flex;
   flex-flow: row;
@@ -34,25 +34,26 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .infoStyle img {
   width: 30px;
-  height: 30px;}
+  height: 30px;
+}
 
-  .infoStyle button{
-    margin-bottom: 0px;
-    min-height: 10px;
-  }
+.infoStyle button {
+  margin-bottom: 0px;
+  min-height: 10px;
+}
 
-  .social{
-    width: 200px;
-    height: 200px;
-display: flex;
-flex-flow: column;
-justify-content: space-between;
-align-items: start;
-  }
+.social {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: start;
+}
 .navbar {
   width: 100%;
   display: flex;
@@ -69,7 +70,7 @@ align-items: start;
 }
 
 button {
-background-color: transparent;
-border-color: transparent;
-cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
 }

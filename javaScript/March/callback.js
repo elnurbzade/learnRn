@@ -32,9 +32,39 @@
 // const num1 = 12;
 // const num2 = 13;
 
-function calculate(num1, num2) {
-  const sum = num1 + num2;
-  console.log(sum);
+// function calculate(num1, num2) {
+//   const sum = num1 + num2;
+//   console.log(sum);
+// }
+
+// console.log(sum);
+
+function getUser(userId, callback) {
+  console.log("Get user from database.");
+  setTimeout(() => {
+    callback({
+      userId: userId,
+      user: "John",
+    });
+  }, 1000);
 }
- 
-console.log(sum);
+function getServices(user, callback) {
+  console.log(`Get services  of ${user.username} from the API.`);
+  setTimeout(() => {
+    callback(["Email", "CDN", "VPN"]);
+  }, 2000);
+}
+
+function getServiceCost(services, callback) {
+  console.log(`Calculate  service cost of ${services}.`);
+  setTimeout(() => {
+    callback(services.length * 100);
+  }, 3000);
+}
+getUser(100, (user) => {
+  getServices(user, (services)=>{
+    getServiceCost(services,(cost)=>{
+      console.log(`The service cost is ${cost}.`);
+    });
+  });
+});

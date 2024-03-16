@@ -8,3 +8,16 @@ console.log(num);
 console.log(e);
 let message = "Hello New Stack";
 console.log(message);
+let obj = { x: 0 };
+console.log(obj);
+let myName2 = "Alice";
+console.log(myName2);
+function greet(name) {
+    console.log("Hello, " + name.toUpperCase() + " !!!");
+}
+greet("john");
+// obj.foo();
+// obj();
+// obj.bar = 100;
+// obj = "hello";
+// const obj: number = obj;

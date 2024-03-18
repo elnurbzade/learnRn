@@ -5,3 +5,5 @@ async function logMovies() {
 }
 
 console.log(logMovies())
+
+

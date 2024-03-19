@@ -29,3 +29,11 @@ function greet(name: string) {
 }
 greet("john");
 
+function getFavoriteNumber (): number {
+  return 12
+}
+
+const result = getFavoriteNumber()
+console.log(result);
+
+
